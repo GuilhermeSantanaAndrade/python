@@ -1,0 +1,370 @@
+
+Mudanças iniciaram em 2019-05-06 12:58:49.577101.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Joao'}.
+Mudanças finalizaram em 2019-05-06 12:58:49.583101.
+
+Mudanças iniciaram em 2019-05-06 12:58:59.227972.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'Helen'}.
+Mudanças finalizaram em 2019-05-06 12:58:59.229972.
+
+Mudanças iniciaram em 2019-05-06 12:59:10.937817.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Vitor'}.
+Mudanças finalizaram em 2019-05-06 12:59:10.938815.
+
+Mudanças iniciaram em 2019-05-06 12:59:17.088732.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'Renan'}.
+Mudanças finalizaram em 2019-05-06 12:59:17.089731.
+
+Mudanças iniciaram em 2019-05-06 12:59:28.412580.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'SI'}.
+Mudanças finalizaram em 2019-05-06 12:59:28.414579.
+
+Mudanças iniciaram em 2019-05-06 12:59:36.638469.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'ADS'}.
+Mudanças finalizaram em 2019-05-06 12:59:36.640469.
+
+Mudanças iniciaram em 2019-05-06 12:59:55.054221.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'takai'}.
+Mudanças finalizaram em 2019-05-06 12:59:55.056221.
+
+Mudanças iniciaram em 2019-05-06 13:00:02.806118.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'Antonio'}.
+Mudanças finalizaram em 2019-05-06 13:00:02.807116.
+
+Mudanças iniciaram em 2019-05-06 13:00:21.491866.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 1, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 1}.
+Mudanças finalizaram em 2019-05-06 13:00:21.492864.
+
+Mudanças iniciaram em 2019-05-06 13:00:40.926605.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 2, 'id_coordenador': 2, 'nome': 'ADS', 'plano_ensino': 'Presencial', 'status': 1}.
+Mudanças finalizaram em 2019-05-06 13:00:40.927605.
+
+Mudanças iniciaram em 2019-05-06 13:01:07.132251.
+Valor original: None.
+Valor final: {'ano': 2019, 'data': '06/05/2019', 'id': 1, 'id_curso': 1, 'id_disciplina': 1, 'id_professor': 1, 'semestre': 3, 'turma': '3C'}.
+Mudanças finalizaram em 2019-05-06 13:01:07.134251.
+
+Mudanças iniciaram em 2019-05-06 13:01:22.110053.
+Valor original: None.
+Valor final: {'ano': 2019, 'data': '06/05/2019', 'id': 2, 'id_curso': 2, 'id_disciplina': 2, 'id_professor': 2, 'semestre': 3, 'turma': '3C'}.
+Mudanças finalizaram em 2019-05-06 13:01:22.112053.
+
+Mudanças iniciaram em 2019-05-06 13:04:13.598744.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Joao'}.
+Mudanças finalizaram em 2019-05-06 13:04:13.604746.
+
+Mudanças iniciaram em 2019-05-06 13:04:19.715664.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'Hellen'}.
+Mudanças finalizaram em 2019-05-06 13:04:19.716663.
+
+Mudanças iniciaram em 2019-05-06 13:04:32.612489.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Vitor'}.
+Mudanças finalizaram em 2019-05-06 13:04:32.613490.
+
+Mudanças iniciaram em 2019-05-06 13:04:39.776393.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'Renan'}.
+Mudanças finalizaram em 2019-05-06 13:04:39.777394.
+
+Mudanças iniciaram em 2019-05-06 13:04:53.051216.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Takai'}.
+Mudanças finalizaram em 2019-05-06 13:04:53.052215.
+
+Mudanças iniciaram em 2019-05-06 13:05:08.717004.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Si'}.
+Mudanças finalizaram em 2019-05-06 13:05:08.718004.
+
+Mudanças iniciaram em 2019-05-06 13:05:15.849909.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'ADS'}.
+Mudanças finalizaram em 2019-05-06 13:05:15.851907.
+
+Mudanças iniciaram em 2019-05-06 13:05:34.457659.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 1, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 1}.
+Mudanças finalizaram em 2019-05-06 13:05:34.460658.
+
+Mudanças iniciaram em 2019-05-06 13:05:54.148393.
+Valor original: None.
+Valor final: {'ano': 2019, 'data': '06/05/2019', 'id': 1, 'id_curso': 1, 'id_disciplina': 1, 'id_professor': 1, 'semestre': 3, 'turma': '3C'}.
+Mudanças finalizaram em 2019-05-06 13:05:54.150393.
+
+Mudanças iniciaram em 2019-05-06 13:10:16.892863.
+Valor original: None.
+Valor final: {'dt_solicitacao': '06/05/2019', 'id': 1, 'id_aluno': 1, 'id_coordenador': 2, 'id_disciplina_ofertada': 2, 'status': 1}.
+Mudanças finalizaram em 2019-05-06 13:10:16.893864.
+
+Mudanças iniciaram em 2019-05-06 13:10:48.467441.
+Valor original: None.
+Valor final: {'dt_solicitacao': '06/05/2019', 'id': 2, 'id_aluno': 1, 'id_coordenador': 2, 'id_disciplina_ofertada': 2, 'status': 8}.
+Mudanças finalizaram em 2019-05-06 13:10:48.468441.
+
+Mudanças iniciaram em 2019-05-06 14:46:34.210407.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Henrique'}.
+Mudanças finalizaram em 2019-05-06 14:46:34.216408.
+
+Mudanças iniciaram em 2019-05-06 14:46:42.901290.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Vitor'}.
+Mudanças finalizaram em 2019-05-06 14:46:42.902291.
+
+Mudanças iniciaram em 2019-05-06 14:46:52.532160.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Takai'}.
+Mudanças finalizaram em 2019-05-06 14:46:52.534161.
+
+Mudanças iniciaram em 2019-05-06 14:47:01.428040.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'SI'}.
+Mudanças finalizaram em 2019-05-06 14:47:01.429041.
+
+Mudanças iniciaram em 2019-05-06 14:47:14.697863.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 1, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 1}.
+Mudanças finalizaram em 2019-05-06 14:47:14.699863.
+
+Mudanças iniciaram em 2019-05-06 14:47:37.803551.
+Valor original: None.
+Valor final: {'ano': 2019, 'data': '06/05/2019', 'id': 1, 'id_curso': 1, 'id_disciplina': 1, 'id_professor': 1, 'semestre': 3, 'turma': '3C'}.
+Mudanças finalizaram em 2019-05-06 14:47:37.805551.
+
+Mudanças iniciaram em 2019-05-06 14:57:18.557299.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Henrique'}.
+Mudanças finalizaram em 2019-05-06 14:57:18.563298.
+
+Mudanças iniciaram em 2019-05-06 14:57:28.724162.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Renan'}.
+Mudanças finalizaram em 2019-05-06 14:57:28.726160.
+
+Mudanças iniciaram em 2019-05-06 14:57:37.894038.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Takai'}.
+Mudanças finalizaram em 2019-05-06 14:57:37.895037.
+
+Mudanças iniciaram em 2019-05-06 14:57:44.161954.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Si'}.
+Mudanças finalizaram em 2019-05-06 14:57:44.162953.
+
+Mudanças iniciaram em 2019-05-06 15:01:33.841865.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Henrique'}.
+Mudanças finalizaram em 2019-05-06 15:01:33.846866.
+
+Mudanças iniciaram em 2019-05-06 15:01:42.923744.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Renan'}.
+Mudanças finalizaram em 2019-05-06 15:01:42.925744.
+
+Mudanças iniciaram em 2019-05-06 15:01:56.283564.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Takai'}.
+Mudanças finalizaram em 2019-05-06 15:01:56.284564.
+
+Mudanças iniciaram em 2019-05-06 15:02:03.354469.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Si'}.
+Mudanças finalizaram em 2019-05-06 15:02:03.355470.
+
+Mudanças iniciaram em 2019-05-06 15:02:28.330135.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 1, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 1}.
+Mudanças finalizaram em 2019-05-06 15:02:28.331135.
+
+Mudanças iniciaram em 2019-05-06 15:02:50.677833.
+Valor original: None.
+Valor final: {'ano': 2019, 'data': '06/05/2019', 'id': 1, 'id_curso': 1, 'id_disciplina': 1, 'id_professor': 1, 'semestre': 3, 'turma': '3C'}.
+Mudanças finalizaram em 2019-05-06 15:02:50.679832.
+
+Mudanças iniciaram em 2019-05-06 15:04:38.156388.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Joao'}.
+Mudanças finalizaram em 2019-05-06 15:04:38.160386.
+
+Mudanças iniciaram em 2019-05-06 15:04:47.807257.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'renan'}.
+Mudanças finalizaram em 2019-05-06 15:04:47.811261.
+
+Mudanças iniciaram em 2019-05-06 15:04:52.583195.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Si'}.
+Mudanças finalizaram em 2019-05-06 15:04:52.585194.
+
+Mudanças iniciaram em 2019-05-06 15:05:02.512060.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Takai'}.
+Mudanças finalizaram em 2019-05-06 15:05:02.513060.
+
+Mudanças iniciaram em 2019-05-06 15:05:21.340807.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 1, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 1}.
+Mudanças finalizaram em 2019-05-06 15:05:21.341806.
+
+Mudanças iniciaram em 2019-05-06 15:05:44.976489.
+Valor original: None.
+Valor final: {'ano': 2019, 'data': '06/05/2019', 'id': 1, 'id_curso': 1, 'id_disciplina': 1, 'id_professor': 1, 'semestre': 3, 'turma': '3C'}.
+Mudanças finalizaram em 2019-05-06 15:05:44.978491.
+
+Mudanças iniciaram em 2019-05-06 15:08:02.851636.
+Valor original: None.
+Valor final: {'dt_solicitacao': '06/05/2019', 'id': 1, 'id_aluno': 1, 'id_coordenador': 2, 'id_disciplina_ofertada': 2, 'status': 1}.
+Mudanças finalizaram em 2019-05-06 15:08:02.852636.
+
+Mudanças iniciaram em 2019-05-06 15:35:29.084018.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Joao'}.
+Mudanças finalizaram em 2019-05-06 15:35:29.090017.
+
+Mudanças iniciaram em 2019-05-06 15:35:40.001871.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Renan'}.
+Mudanças finalizaram em 2019-05-06 15:35:40.003870.
+
+Mudanças iniciaram em 2019-05-06 15:35:47.152777.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Takai'}.
+Mudanças finalizaram em 2019-05-06 15:35:47.153777.
+
+Mudanças iniciaram em 2019-05-06 15:35:56.123654.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'SI'}.
+Mudanças finalizaram em 2019-05-06 15:35:56.124655.
+
+Mudanças iniciaram em 2019-05-06 15:36:37.642096.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 2, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 0}.
+Mudanças finalizaram em 2019-05-06 15:36:37.643098.
+
+Mudanças iniciaram em 2019-05-06 15:36:46.338979.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 1, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 0}.
+Mudanças finalizaram em 2019-05-06 15:36:46.339978.
+
+Mudanças iniciaram em 2019-05-06 15:38:03.680940.
+Valor original: None.
+Valor final: {'ano': 2019, 'data': '06/05/2019', 'id': 1, 'id_curso': 1, 'id_disciplina': 2, 'id_professor': 1, 'semestre': 3, 'turma': '3C'}.
+Mudanças finalizaram em 2019-05-06 15:38:03.681939.
+
+Mudanças iniciaram em 2019-05-06 15:38:31.418568.
+Valor original: None.
+Valor final: {'dt_solicitacao': '06/05/2019', 'id': 1, 'id_aluno': 1, 'id_coordenador': 1, 'id_disciplina_ofertada': 1, 'status': 1}.
+Mudanças finalizaram em 2019-05-06 15:38:31.421567.
+
+Mudanças iniciaram em 2019-05-06 15:38:38.598471.
+Valor original: None.
+Valor final: {'dt_solicitacao': '06/05/2019', 'id': 2, 'id_aluno': 1, 'id_coordenador': 1, 'id_disciplina_ofertada': 1, 'status': 1}.
+Mudanças finalizaram em 2019-05-06 15:38:38.599470.
+
+Mudanças iniciaram em 2019-05-06 15:40:43.091797.
+Valor original: {'dt_solicitacao': '06/05/2019', 'id': 2, 'id_aluno': 1, 'id_coordenador': 1, 'id_disciplina_ofertada': 1, 'status': 1}.
+Valor final: {'dt_solicitacao': '16/12/2019', 'id_aluno': 1, 'id_coordenador': 1, 'id_disciplina_ofertada': 1, 'status': 9}.
+Mudanças finalizaram em 2019-05-06 15:40:43.092795.
+
+Mudanças iniciaram em 2019-05-06 16:40:35.678235.
+Valor original: None.
+Valor final: {'id': 3, 'nome': 'Joao'}.
+Mudanças finalizaram em 2019-05-06 16:40:35.682235.
+
+Mudanças iniciaram em 2019-05-06 16:40:51.818018.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'Joao'}.
+Mudanças finalizaram em 2019-05-06 16:40:51.819017.
+
+Mudanças iniciaram em 2019-05-06 16:40:55.941963.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Joao'}.
+Mudanças finalizaram em 2019-05-06 16:40:55.942962.
+
+Mudanças iniciaram em 2019-05-06 16:41:21.695616.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Renan'}.
+Mudanças finalizaram em 2019-05-06 16:41:21.698615.
+
+Mudanças iniciaram em 2019-05-06 16:41:30.824492.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'Vitor'}.
+Mudanças finalizaram em 2019-05-06 16:41:30.825492.
+
+Mudanças iniciaram em 2019-05-06 16:42:05.806023.
+Valor original: None.
+Valor final: {'id': 3, 'nome': 'Joana'}.
+Mudanças finalizaram em 2019-05-06 16:42:05.807024.
+
+Mudanças iniciaram em 2019-05-06 16:42:20.517825.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Takai'}.
+Mudanças finalizaram em 2019-05-06 16:42:20.518823.
+
+Mudanças iniciaram em 2019-05-06 16:42:35.176629.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'Antonio'}.
+Mudanças finalizaram em 2019-05-06 16:42:35.178629.
+
+Mudanças iniciaram em 2019-05-06 16:42:59.745296.
+Valor original: None.
+Valor final: {'id': 2, 'nome': 'SI'}.
+Mudanças finalizaram em 2019-05-06 16:42:59.746296.
+
+Mudanças iniciaram em 2019-05-06 16:43:07.544192.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'ADs'}.
+Mudanças finalizaram em 2019-05-06 16:43:07.550194.
+
+Mudanças iniciaram em 2019-05-06 16:45:31.564257.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 1, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 1}.
+Mudanças finalizaram em 2019-05-06 16:45:31.566257.
+
+Mudanças iniciaram em 2019-05-06 16:45:38.644160.
+Valor original: None.
+Valor final: {'carga_horaria': 80, 'id': 2, 'id_coordenador': 1, 'nome': 'SI', 'plano_ensino': 'Presencial', 'status': 1}.
+Mudanças finalizaram em 2019-05-06 16:45:38.645160.
+
+Mudanças iniciaram em 2019-05-06 16:46:15.708665.
+Valor original: None.
+Valor final: {'ano': 2019, 'data': '06/05/2019', 'id': 1, 'id_curso': 1, 'id_disciplina': 1, 'id_professor': 1, 'semestre': 3, 'turma': '3C'}.
+Mudanças finalizaram em 2019-05-06 16:46:15.709665.
+
+Mudanças iniciaram em 2019-05-06 16:46:52.542169.
+Valor original: None.
+Valor final: {'ano': 2018, 'data': '05/05/2019', 'id': 2, 'id_curso': 1, 'id_disciplina': 1, 'id_professor': 1, 'semestre': 3, 'turma': '3B'}.
+Mudanças finalizaram em 2019-05-06 16:46:52.544170.
+
+Mudanças iniciaram em 2019-05-06 16:51:37.572336.
+Valor original: None.
+Valor final: {'dt_solicitacao': '06/05/2019', 'id': 1, 'id_aluno': 1, 'id_coordenador': 2, 'id_disciplina_ofertada': 1, 'status': 1}.
+Mudanças finalizaram em 2019-05-06 16:51:37.574336.
+
+Mudanças iniciaram em 2019-05-06 16:52:30.226629.
+Valor original: None.
+Valor final: {'dt_solicitacao': '06/05/2019', 'id': 2, 'id_aluno': 1, 'id_coordenador': 1, 'id_disciplina_ofertada': 1, 'status': 1}.
+Mudanças finalizaram em 2019-05-06 16:52:30.227629.
+
+Mudanças iniciaram em 2019-05-06 20:30:59.909996.
+Valor original: None.
+Valor final: {'id': 1, 'nome': 'Joao'}.
+Mudanças finalizaram em 2019-05-06 20:30:59.917996.
+
+Mudanças iniciaram em 2019-05-06 20:31:15.437996.
+Valor original: {'id': 1, 'nome': 'Joao'}.
+Valor final: {'id': 1, 'nome': 'guilherme'}.
+Mudanças finalizaram em 2019-05-06 20:31:15.438996.
