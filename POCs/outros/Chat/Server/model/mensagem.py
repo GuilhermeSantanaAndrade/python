@@ -1,43 +1,35 @@
-from infra.db import con
-from wrap_connection import transact
-from model.mensagem import Mensagem
+class Mensagem():
+    def __init__(self, id, id_remetente, id_destinatario, data_hora, texto):
+        self.__id = id
+        self.__id_remetente = id_remetente
+        self.__id_destinatario = id_destinatario
+        self.__data_hora = data_hora
+        self.__texto = texto
 
-sql_criar = "INSERT INTO Mensagens(id, id_remetente, id_destinatario, texto) VALUES (?, ?, ?, ?)"
-sql_listar = "SELECT id, id_remetente, id_destinatario, texto FROM Mensagens"
-sql_localizar = "SELECT id, id_remetente, id_destinatario, texto FROM Mensagens WHERE id = ?"
-sql_apagar = "DELETE FROM Mensagens WHERE id = ?"
-sql_atualizar = "UPDATE Mensagens SET id = ?, id_remetente = ?, id_destinatario = ?, texto = ? WHERE id = ?"
+    def atualizar(self, id, id_remetente, id_destinatario, data_hora, texto):
+        self.__id = id
+        self.__id_remetente = id_remetente
+        self.__id_destinatario = id_destinatario
+        self.__data_hora = data_hora
+        self.__texto = texto
+        return self
 
-class MensagemJaExiste(Exception):
-    pass
+    @property
+    def id(self):
+        return self.__id
 
-@transact(con)
-def listar():
-    cursor.execute(sql_listar)
-    resultado = []
-    for r in cursor.fetchall():
-        resultado.append(Mensagem(r[0], r[1], r[2], r[3]))
-    return resultado
+    @property    
+    def id_remetente(self):
+        return self.__id_remetente
 
-@transact(con)
-def localizar(id):
-    cursor.execute(sql_localizar, (id,))
-    r = cursor.fetchone()
-    if r == None:
-        return None
-    return Mensagem(r[0], r[1], r[2], r[3])
+    @property    
+    def id_destinatario(self):
+        return self.__id_destinatario
 
-@transact(con)
-def criar(aluno):
-    cursor.execute(sql_criar, (Mensagem.id, Mensagem.id_remetente, Mensagem.id_destinatario, Mensagem.texto))
-    connection.commit()
+    @property    
+    def data_hora(self):
+        return self.__data_hora
 
-@transact(con)
-def remover(id):
-    cursor.execute(sql_apagar,(id,))
-    connection.commit()
-
-@transact(con)
-def atualizar(id_antigo, id_novo, id_destinatario, id_remetente, texto):
-    cursor.execute(sql_atualizar, (id_novo, id_destinatario, id_remetente, texto))
-    connection.commit()
+    @property    
+    def texto(self):
+        return self.__texto

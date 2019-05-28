@@ -15,31 +15,33 @@ usuarios_app = Blueprint('usuarios_app', __name__, template_folder='templates')
 campos = ["id", "nome", "segredo"]
 tipos = [int, str, str]
 
-@usuarios_app.route('/usuarios', methods=['GET'])
+@usuarios_app.route('/usr', methods=['GET'])
 def listar():
     lista = service_listar()
     return jsonify(to_dict_list(lista))
 
-@usuarios_app.route('/usuarios/<int:id>', methods=['GET'])
+@usuarios_app.route('/usr/<int:id>', methods=['GET'])
 def localizar(id):
     x = service_localizar(id)
     if x != None:
         return jsonify(to_dict(x))
     return '', 404
 
-@usuarios_app.route('/usuarios', methods=['POST'])
+@usuarios_app.route('/usr', methods=['POST'])
 def criar():
     dados = request.get_json()
-    print(dados)
+    campos = ["nome"]
+    tipos = [str]
+
     if not validar_campos(dados, campos, tipos):
         return '', 422
     try:
-        criado = service_criar(dados['id'], dados['nome'], dados['segredo'])
+        criado = service_criar(dados['nome'])
         return jsonify(to_dict(criado))
     except UsuarioJaExiste:
         return 'Usuário ja cadastrado', 409
 
-@usuarios_app.route('/usuarios/<int:id>', methods=['PUT'])
+@usuarios_app.route('/usr/<int:id>', methods=['PUT'])
 def atualizar(id):
     dados = request.get_json()
     if not validar_campos(dados, campos, tipos):
@@ -52,7 +54,7 @@ def atualizar(id):
         return jsonify(to_dict(atualizado))
     return '', 404
 
-@usuarios_app.route('/usuarios/<int:id>', methods=['DELETE'])
+@usuarios_app.route('/usr/<int:id>', methods=['DELETE'])
 def remover(id):
     try:
         removido = service_remover(id)
@@ -61,3 +63,5 @@ def remover(id):
     if removido != None:
         return jsonify(to_dict(removido))
     return '', 404
+
+

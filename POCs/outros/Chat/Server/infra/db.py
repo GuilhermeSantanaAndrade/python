@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS Mensagens (
     id INTEGER PRIMARY KEY,
     id_remetente INTEGER NOT NULL,
     id_destinatario INTEGER NOT NULL,
+    data_hora DATE_TIME NOT NULL,
     texto TEXT NOT NULL
 );
 """]
