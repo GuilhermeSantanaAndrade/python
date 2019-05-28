@@ -3,6 +3,7 @@ from infra.validacao import validar_campos
 from infra.to_dict import to_dict, to_dict_list
 from services.usuario_service import \
     listar as service_listar, \
+    listarParaFora as service_listarParaFora, \
     localizar as service_localizar, \
     criar as service_criar, \
     remover as service_remover, \
@@ -16,6 +17,10 @@ campos = ["id", "nome", "segredo"]
 tipos = [int, str, str]
 
 @usuarios_app.route('/usr', methods=['GET'])
+def listarParaFora():
+    lista = service_listarParaFora()
+    return jsonify(to_dict(lista))
+
 def listar():
     lista = service_listar()
     return jsonify(to_dict_list(lista))

@@ -4,7 +4,7 @@ from infra.to_dict import to_dict, to_dict_list
 from datetime import datetime
 from services.mensagem_service import \
     listar as service_listar, \
-    localizar as service_localizar, \
+    localizarRange as service_localizar, \
     criar as service_criar, \
     remover as service_remover, \
     atualizar as service_atualizar, \
@@ -24,7 +24,7 @@ def criar():
     if not validar_campos(dados, campos, tipos):
         return '', 422
     try:
-        criado = service_criar(dados['segredo'], dados['id_remetente'], dados['id_destinatario'], dados['texto'])
+        criado = service_criar(dados['segredo'], dados['de'], dados['para'], dados['texto'])
         return jsonify(to_dict(criado))
     except MensagemJaExiste:
         return 'Id de Mensagem já cadastrado', 409
@@ -39,11 +39,32 @@ def listar():
     return jsonify(to_dict_list(lista))
 
 @mensagens_app.route('/msg/<int:id>', methods=['GET'])
-def localizar(id):
-    inicio = int(request.args.get('inicio'))
-    fim = int(request.args.get('fim'))
-    segredo = str(request.args.get('segredo'))
-    x = service_localizar(id)
+def localizar(id):  
+    inicio = None
+    fim = None
+    segredo = None
+    try:
+        segredo = str(request.args.get('segredo'))
+    except:
+        pass
+
+    try:
+        inicio = int(request.args.get('inicio'))
+    except:
+        inicio = 0
+    
+    try:
+        fim = int(request.args.get('fim'))
+    except:
+        fim = inicio
+
+    try:
+        x = service_localizar(id, segredo, inicio, fim)
+    except UsuarioNaoExiste:
+        return UsuarioNaoExiste, 404
+    except SegredoInvalido:
+        return 'Segredo inválido', 403
+
     if x != None:
         return jsonify(to_dict(x))
     return '', 404

@@ -1,6 +1,6 @@
 from model.usuario import Usuario
 from infra.log import Log
-from random import random
+import random
 from dao.usuario_dao import \
     listar as listar_dao, \
     criar as criar_dao, \
@@ -23,6 +23,14 @@ class UsuarioComDependencia(Exception):
 def listar():
     return listar_dao()
 
+def listarParaFora():
+    usuarios = listar_dao()
+    result = []
+    for usr in usuarios:
+        result.append({"id": usr.id, "nome": usr.nome})
+    return {"usr": result}
+
+
 def localizar(id):
     return localizar_dao(id)
 
@@ -32,8 +40,8 @@ def criar(nome):
         if (usr.nome == nome):
             raise UsuarioJaExiste()
 
-    id = random(1, 2000)
-    segredo = str(random(1, 99999))
+    id = random.randint(1, 200)
+    segredo = str(random.randint(1, 99999))
         
     log = Log(None)
     criado = Usuario(id, nome, segredo)

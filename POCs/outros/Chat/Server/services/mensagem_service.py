@@ -7,6 +7,7 @@ from dao.mensagem_dao import \
     listar as listar_dao, \
     criar as criar_dao, \
     localizar as localizar_dao,\
+    localizarRange as localizarRange_dao,\
     remover as remover_dao,\
     atualizar as atualizar_dao
 
@@ -16,15 +17,33 @@ class MensagemJaExiste(Exception):
 def listar():
     return listar_dao()
 
-def localizar(id):
-    return localizar_dao(id)
+def localizar(id_msg):
+    return localizar_dao(id_msg)
+
+def localizarRange(id_remetente, segredo, inicio, fim):
+    usuarios = listar_usuarios()
+    found = False
+    for usr in usuarios:
+        if (usr.id == id_remetente):
+            if (usr.segredo != segredo):
+                raise SegredoInvalido()
+            found = True
+            break
+    if (not found):
+      raise UsuarioNaoExiste('remetente inexistente')
+
+    mensagens = localizarRange_dao(id_remetente, inicio, fim)
+    result = []
+    for msg in mensagens:
+        result.append({"de": msg.id_remetente, "para": msg.id_destinatario, "data_hora": msg.data_hora, "texto": msg.texto})
+    return {"mensagens": result}
 
 def criar(segredo, id_remetente, id_destinatario, texto):
-    id = getMaxId()
+    id = getMaxId() + 1
     if localizar(id) != None:
         raise MensagemJaExiste()
 
-    usuarios = listar()
+    usuarios = listar_usuarios()
     found = False
     for usr in usuarios:
         if (usr.id == id_remetente):
@@ -43,12 +62,12 @@ def criar(segredo, id_remetente, id_destinatario, texto):
     if (not found):
       raise UsuarioNaoExiste('destinatario inexistente')
 
-    data_hora = datetime.datetime.now()
+    data_hora = datetime.now()
     log = Log(None)
     criado = Mensagem(id, id_remetente, id_destinatario, data_hora, texto)
     criar_dao(criado)
     log.finalizar(criado)
-    return criado
+    return {"id": criado.id, "data_hora": criado.data_hora}
 
 def remover(id):
     existente = localizar(id)
@@ -75,7 +94,7 @@ def atualizar(id_antigo, id_novo, id_remetente, id_destinatario, data_hora, text
 
 def getMaxId():
     lista = listar()
-    maxID = 0
+    maxID = -1
     for msg in lista:
         if (msg.id > maxID):
             maxID = msg.id
