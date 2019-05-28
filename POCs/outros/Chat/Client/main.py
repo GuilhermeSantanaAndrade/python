@@ -3,7 +3,6 @@ import requests as req
 usuario = {"id": -1, "nome": '', "segredo": ''}
 
 def autentica(nome):
-    #url = "http://127.0.0.1:5000/?apikey={}&i={}".format(api_key, film_id)
     url = "http://localhost:5000/usr"
     inputParams = {"nome": nome}
     try:
@@ -29,8 +28,14 @@ def listaMinhasMensagens():
         raise 'Erro ao listar : ' + str(err)
     return retorno    
 
-def enviaMsg():
-    pass
+def enviaMsg(id_destinatario, texto):
+    url = "http://localhost:5000/msg"
+    inputParams = {"de": int(usuario['id']), "para": int(id_destinatario), "segredo": usuario['segredo'], "texto": texto}
+    try:
+        retorno = req.post(url, json = inputParams).json()
+    except Exception as err:
+        raise str(err)
+    return retorno
 
 while True:
     print('\nUsuario:')
@@ -65,8 +70,29 @@ while True:
             continue
         elif value == '2':
             mensagens = listaMinhasMensagens()['mensagens']
+            print('\n\nDE -- PARA -- DATA_HORA -- TEXTO')
+            for msg in mensagens:
+                print(str(msg['de']) + ' / ' + str(msg['para']) + ' / ' + msg['data_hora'] + ' / ' + msg['texto'])
+            input("Pressione Enter para voltar...")
+            continue
         elif value == '3':
-            pass            
+            while True:
+                print('\nID do destinatário (Digite e pressione ENTER)')
+                value = input('=> ')
+                if (value == ''):
+                    continue
+                id_destinatario = value
+
+                print('\nTexto (Digite e pressione ENTER)')
+                value = input('=> ')
+                if (value == ''):
+                    continue
+                texto = value
+                break
+
+            result = enviaMsg(id_destinatario, texto)
+            input("\nEnviado com sucesso! Pressione Enter para voltar...")
+            continue            
         elif value == '4':
             print('Aplicação finalizada...')
             break        
