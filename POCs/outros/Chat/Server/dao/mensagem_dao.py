@@ -5,7 +5,7 @@ from model.mensagem import Mensagem
 sql_criar = "INSERT INTO Mensagens (id, id_remetente, id_destinatario, data_hora, texto) VALUES (?, ?, ?, ?, ?)"
 sql_listar = "SELECT id, id_remetente, id_destinatario, data_hora, texto FROM Mensagens"
 sql_localizar = "SELECT id, id_remetente, id_destinatario, data_hora, texto FROM Mensagens WHERE id = ?"
-sql_localizarRange = "SELECT id, id_remetente, id_destinatario, data_hora, texto FROM Mensagens WHERE ((id_remetente = ?) or (id_remetente = 0)) and id between ? and ?"
+sql_localizarRange = "SELECT id, id_remetente, id_destinatario, data_hora, texto FROM Mensagens WHERE ((id_destinatario = ?) or (id_destinatario = 0)) and id between ? and ?"
 sql_apagar = "DELETE FROM Mensagens WHERE id = ?"
 sql_atualizar = "UPDATE Mensagens SET id = ?, id_remetente = ?, id_destinatario = ?, data_hora = ?, texto = ? WHERE id = ?"
 
